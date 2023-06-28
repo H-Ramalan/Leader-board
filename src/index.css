@@ -9,13 +9,16 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .recent {
   display: flex;
 }
+
 .score-form {
   display: flex;
   flex-direction: column;
 }
+
 .scores-list {
   list-style: none;
 }
