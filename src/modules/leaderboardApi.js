@@ -1,19 +1,18 @@
-const url =
-  "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hamza3Zl4d7IVkemOTTVg2fUdz/scores/";
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hamza3Zl4d7IVkemOTTVg2fUdz/scores/';
 
-const scores = document.getElementById("scores");
+const scores = document.getElementById('scores');
 const addScore = () => {
-  const submitForm = document.querySelector(".score-form");
-  submitForm.addEventListener("submit", async (e) => {
+  const submitForm = document.querySelector('.score-form');
+  submitForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const username = document.getElementById("user").value;
-    const userscore = document.getElementById("score").value;
+    const username = document.getElementById('user').value;
+    const userscore = document.getElementById('score').value;
     try {
       await fetch(url, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-type": "application/json",
+          Accept: 'application/json, text/plain, */*',
+          'Content-type': 'application/json',
         },
         body: JSON.stringify({
           user: username,
@@ -21,15 +20,14 @@ const addScore = () => {
         }),
       });
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
-    document.getElementById("user").value = "";
-    document.getElementById("score").value = "";
+    document.getElementById('user').value = '';
+    document.getElementById('score').value = '';
   });
 };
 
-const listScore = (user, score) =>
-  `<div class="scores-list">${user}:${score}</div>`;
+const listScore = (user, score) => `<div class="scores-list">${user}:${score}</div>`;
 const displayScore = async () => {
   try {
     await fetch(url)
@@ -37,11 +35,11 @@ const displayScore = async () => {
       .then((datas) => {
         datas.result.forEach((player) => {
           const insertHTML = listScore(player.user, player.score);
-          scores.insertAdjacentHTML("afterbegin", insertHTML);
+          scores.insertAdjacentHTML('afterbegin', insertHTML);
         });
       });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
