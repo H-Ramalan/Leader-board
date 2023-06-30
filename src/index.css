@@ -1,22 +1,24 @@
-:root {
-  --primary: #ddd;
-  --secondary: #e5d4d4;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--primary);
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.recent {
+  display: flex;
+}
+
+.score-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.scores-list {
+  list-style: none;
 }

@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leader Board</title>
-  </head>
+  <script defer src="bundle.js"></script></head>
   <body>
     <h1>Leader Board</h1>
     <div class="main-box">
       <div class="recent-scores-box">
         <div class="recent">
           <h2>Recent scores</h2>
-          <button id="refresh">Refresh</button>
+          <button class="refresh">Refresh</button>
         </div>
-        <div id="scores"></div>
+        <div class="scores">
+          <ul class="scores-list"></ul>
+        </div>
       </div>
       <div class="add-score-box">
         <h2>Add you score</h2>
         <form action="" class="score-form">
-          <input type="text" class="input name" id="user" required />
-          <input type="text" class="input score" id="score" required />
-          <input type="submit" class="submit" id="submit" />
+          <input type="text" class="input name" />
+          <input type="text" class="input score" />
+          <input type="submit" class="submit" />
         </form>
       </div>
     </div>
