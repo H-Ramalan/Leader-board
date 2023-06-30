@@ -29,19 +29,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Leader Board: Use of Javascript webpack and Api] <a name="about-project"></a>
+# 📖 [Leader Board] <a name="about-project"></a>
 
-This project is designed to help us understand JavaScript webpack and how to utilize it and bundle js files.
+- I developed a leaderboard using HTML, CSS, JavaScript, and APIs. This project aims to create a simple and intuitive interface that allows users to track their scores and compare their rankings with others.👌
 
 ## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-- HTML-5
-- CSS3
-- Linters
-- Javascript
-- webpack
 
 <details>
   <summary>Client</summary>
@@ -58,9 +50,9 @@ This project is designed to help us understand JavaScript webpack and how to uti
 
 ### Key Features <a name="key-features"></a>
 
-> Key features of the application.
-
-- **Fast and Optimized by Webpack**
+- **Add the style for the app**
+- **Use the ES6 of javascript**
+- **Set up the project using webpack**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
