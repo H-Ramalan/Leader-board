@@ -141,9 +141,10 @@ Once success it will automaticly running, you should see your application workin
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Features to be added:
-
-- [ ] **[Add scores]**
+- [ ] **Add test using jest**
+- [ ] **Add SIDEBAR SECTIONS**
+- [ ] **Add NAVBAR SECTIONS**
+- [ ] **Add LIVE CHAT SECTION**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
