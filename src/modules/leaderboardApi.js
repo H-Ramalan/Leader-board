@@ -20,7 +20,7 @@ const addScore = () => {
         }),
       });
     } catch (error) {
-      // console.log(error);
+      console.log(error);
     }
     document.getElementById('user').value = '';
     document.getElementById('score').value = '';
@@ -39,7 +39,7 @@ const displayScore = async () => {
         });
       });
   } catch (error) {
-    // console.log(error);
+    console.log(error);
   }
 };
 
