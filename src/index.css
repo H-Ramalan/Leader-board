@@ -45,13 +45,13 @@ body {
 #scores :nth-child(odd) {
   background-color: rgb(142, 153, 149);
   border-radius: 10px;
-  margin-left: 3rem;
 }
 
 #scores {
   border: 2px solid black;
   border-radius: 10px;
   padding: 5px;
+  margin-left: 3rem;
 }
 
 h1 {
