@@ -4,22 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leader Board</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>Leader Board</h1>
     <div class="main-box">
       <div class="recent-scores-box">
         <div class="recent">
-          <h2>Recent scores</h2>
+          <h2 class="recent-header">Recent scores</h2>
           <button id="refresh">Refresh</button>
         </div>
         <div id="scores"></div>
       </div>
       <div class="add-score-box">
-        <h2>Add you score</h2>
+        <h2 class="add">Add you score</h2>
         <form action="" class="score-form">
-          <input type="text" class="input name" id="user" required />
-          <input type="text" class="input score" id="score" required />
+          <input
+            type="text"
+            class="input name"
+            id="user"
+            required
+            placeholder="Username"
+          />
+          <input
+            type="text"
+            class="input score"
+            id="score"
+            required
+            placeholder="Score"
+          />
           <input type="submit" class="submit" id="submit" />
         </form>
       </div>
