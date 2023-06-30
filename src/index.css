@@ -4,14 +4,32 @@
   padding: 0;
 }
 
+body {
+  font-family: "Comfortaa", sans-serif;
+}
+
 .main-box {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
+.recent-scores-box {
+  width: 30%;
+}
+
 .recent {
   display: flex;
+  justify-content: space-around;
+  margin: 20px 15px;
+}
+
+.add {
+  margin: 20px 15px;
+}
+
+.add-score-box {
+  width: 30%;
 }
 
 .score-form {
@@ -21,4 +39,54 @@
 
 .scores-list {
   list-style: none;
+  padding: 8px 0;
+}
+
+#scores :nth-child(odd) {
+  background-color: rgb(142, 153, 149);
+  border-radius: 10px;
+  margin-left: 3rem;
+}
+
+#scores {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin: 3rem;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.submit {
+  align-self: flex-end;
+  padding: 6px 10px;
+  box-shadow: 3px 5px 5px 2px black;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  width: auto;
+  border-radius: 10px;
+}
+
+#refresh {
+  padding: 6px 10px;
+  box-shadow: 3px 5px 5px 2px black;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 10px;
 }
